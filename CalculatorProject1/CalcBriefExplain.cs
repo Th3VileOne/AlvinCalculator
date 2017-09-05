@@ -15,6 +15,7 @@ namespace CalculatorProject1
         public CalcBriefExplain()
         {
             InitializeComponent();
+            richTextBox1.Text = "This calculator does your simple calculator function along with the memory functions.";
         }
     }
 }
