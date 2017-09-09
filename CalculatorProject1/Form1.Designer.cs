@@ -60,8 +60,8 @@
             this.expBtn = new System.Windows.Forms.Button();
             this.memoryTxtBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonInfo = new System.Windows.Forms.Button();
+            this.buttonBinary = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // one
@@ -388,31 +388,33 @@
             this.label1.TabIndex = 34;
             this.label1.Text = "Memory";
             // 
-            // button1
+            // buttonInfo
             // 
-            this.button1.Location = new System.Drawing.Point(425, 419);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 49);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Info";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonInfo.Location = new System.Drawing.Point(425, 419);
+            this.buttonInfo.Name = "buttonInfo";
+            this.buttonInfo.Size = new System.Drawing.Size(60, 49);
+            this.buttonInfo.TabIndex = 35;
+            this.buttonInfo.Text = "Info";
+            this.buttonInfo.UseVisualStyleBackColor = true;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
-            // button2
+            // buttonBinary
             // 
-            this.button2.Location = new System.Drawing.Point(491, 419);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 49);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "Convert Binary";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonBinary.Location = new System.Drawing.Point(491, 419);
+            this.buttonBinary.Name = "buttonBinary";
+            this.buttonBinary.Size = new System.Drawing.Size(126, 49);
+            this.buttonBinary.TabIndex = 36;
+            this.buttonBinary.Text = "Convert Binary";
+            this.buttonBinary.UseVisualStyleBackColor = true;
+            this.buttonBinary.Click += new System.EventHandler(this.buttonBinary_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 479);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonBinary);
+            this.Controls.Add(this.buttonInfo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.memoryTxtBox);
             this.Controls.Add(this.expBtn);
@@ -485,8 +487,8 @@
         private System.Windows.Forms.Button expBtn;
         private System.Windows.Forms.TextBox memoryTxtBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonInfo;
+        private System.Windows.Forms.Button buttonBinary;
     }
 }
 

@@ -629,7 +629,18 @@ namespace CalculatorProject1
             }
         }
 
-     
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            Form a = new CalcBriefExplain();
+            a.ShowDialog();
+        }
+
+        private void buttonBinary_Click(object sender, EventArgs e)
+        {
+            Form a = new binaryConvert();
+            a.ShowDialog();
+            //Application.Run(new binaryConvert());
+        }
     }
 
 
