@@ -51,6 +51,12 @@
     <Compile Include="CalcBriefExplain.Designer.cs">
       <DependentUpon>CalcBriefExplain.cs</DependentUpon>
     </Compile>
+    <Compile Include="binaryConvert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="binaryConvert.Designer.cs">
+      <DependentUpon>binaryConvert.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CalcBriefExplain.resx">
       <DependentUpon>CalcBriefExplain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="binaryConvert.resx">
+      <DependentUpon>binaryConvert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
